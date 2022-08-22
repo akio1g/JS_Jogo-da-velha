@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main>
+        <section class="game-in">
+            <button class="row-1 col-1" id="r0-c0" onclick="chooseBox('r0-c0')"></button>
+            <button class="row-1 col-2" id="r0-c1" onclick="chooseBox('r0-c1')"></button>
+            <button class="row-1 col-3" id="r0-c2" onclick="chooseBox('r0-c2')"></button>
+            <button class="row-2 col-1" id="r1-c0" onclick="chooseBox('r1-c0')"></button>
+            <button class="row-2 col-2" id="r1-c1" onclick="chooseBox('r1-c1')"></button>
+            <button class="row-2 col-3" id="r1-c2" onclick="chooseBox('r1-c2')"></button>
+            <button class="row-3 col-1" id="r2-c0" onclick="chooseBox('r2-c0')"></button>
+            <button class="row-3 col-2" id="r2-c1" onclick="chooseBox('r2-c1')"></button>
+            <button class="row-3 col-3" id="r2-c2" onclick="chooseBox('r2-c2')"></button>
+        </section>
+        <section class="game-over">
+            <h1>Game Over</h1>
+            <button>Back to Menu</button>
+            <button>Play Again</button>
+        </section>        
+
+    </main>
+    <footer>
+        <h4>
+            Created by Gabriel Akio.
+        </h4>
+    </footer>
+</body>
+</html>

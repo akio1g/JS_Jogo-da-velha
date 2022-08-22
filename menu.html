@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <main>
+        <fieldset class="game-options">
+            <legend>Choose one</legend>
+            <label class="select-box"><input name="game-option" type="radio" checked="true" value="one-player" onclick="showDisplay(1)">Singleplayer</label>
+            <label class="select-box"><input name="game-option" type="radio" value="two-players" onclick="showDisplay(2)">Two-player</label>
+            <hr>
+            <label class="name-box" id="player-one">Player One Name: <input type="text" id="name-player-one"></label>
+            <label class="name-box" id="player-two">Player Two Name: <input type="text" id="name-player-two"></label>
+        </fieldset>
+        <button id="button-play-game" onclick="startGame()">Start The Game</button>
+    </main>
+    <footer>
+        <h4>
+            Created by Gabriel Akio.
+        </h4>
+    </footer>
+</body>
+</html>

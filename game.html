@@ -16,22 +16,23 @@
         <h1>Jogo da Velha</h1>
     </header>
     <main>
+        <h2 id="player-round"></h2>
         <section class="game-in">
-            <button class="row-1 col-1" id="r0-c0" onclick="chooseBox('r0-c0')"></button>
-            <button class="row-1 col-2" id="r0-c1" onclick="chooseBox('r0-c1')"></button>
-            <button class="row-1 col-3" id="r0-c2" onclick="chooseBox('r0-c2')"></button>
-            <button class="row-2 col-1" id="r1-c0" onclick="chooseBox('r1-c0')"></button>
-            <button class="row-2 col-2" id="r1-c1" onclick="chooseBox('r1-c1')"></button>
-            <button class="row-2 col-3" id="r1-c2" onclick="chooseBox('r1-c2')"></button>
-            <button class="row-3 col-1" id="r2-c0" onclick="chooseBox('r2-c0')"></button>
-            <button class="row-3 col-2" id="r2-c1" onclick="chooseBox('r2-c1')"></button>
-            <button class="row-3 col-3" id="r2-c2" onclick="chooseBox('r2-c2')"></button>
+            <button class="row-1 col-1" id="r0-c0" onclick="chooseBox(this.id)"></button>
+            <button class="row-1 col-2" id="r0-c1" onclick="chooseBox(this.id)"></button>
+            <button class="row-1 col-3" id="r0-c2" onclick="chooseBox(this.id)"></button>
+            <button class="row-2 col-1" id="r1-c0" onclick="chooseBox(this.id)"></button>
+            <button class="row-2 col-2" id="r1-c1" onclick="chooseBox(this.id)"></button>
+            <button class="row-2 col-3" id="r1-c2" onclick="chooseBox(this.id)"></button>
+            <button class="row-3 col-1" id="r2-c0" onclick="chooseBox(this.id)"></button>
+            <button class="row-3 col-2" id="r2-c1" onclick="chooseBox(this.id)"></button>
+            <button class="row-3 col-3" id="r2-c2" onclick="chooseBox(this.id)"></button>
         </section>
-        <section class="game-over">
-            <h1>Game Over</h1>
+        <div id="end-game">
+            <h1>Game Over - Winner: <span id="winner"></span></h1>
             <button>Back to Menu</button>
             <button>Play Again</button>
-        </section>        
+        </div>        
 
     </main>
     <footer>
@@ -39,5 +40,12 @@
             Created by Gabriel Akio.
         </h4>
     </footer>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function(e) {
+            let dataContent = sessionStorage.getItem('game-info').split(",");
+            document.getElementById('player-round').innerHTML = dataContent[1] + '\'s turn';
+        })
+    </script>
 </body>
 </html>

@@ -2,7 +2,7 @@ function startGame() {
     let option = document.querySelector('input[name="game-option"]:checked');
     let dataGame = [option.value];
     if(option.value === 'one-player'){
-        dataGame.push(document.getElementById('name-player-one'));
+        dataGame.push(document.getElementById('name-player-one').value);
     } else {
         dataGame.push(document.getElementById('name-player-one').value,document.getElementById('name-player-two').value);
     }

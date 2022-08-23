@@ -15,7 +15,7 @@ body {
     display: grid;
     grid-template: minmax(min-content, 10%) 1fr min-content / 1fr;
     row-gap: 40px;
-    font-family: 'Roboto Mono', monospace;;
+    font-family: 'Roboto Mono', monospace;
 }
 
 
